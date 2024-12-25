@@ -1,2 +1,3 @@
-# java-basico
-meu avanço na linguagem JAVA
+# JAVA BASICO
+
+Aqui vai ficar todo meu avanço em JAVA.
