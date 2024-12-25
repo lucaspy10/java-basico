@@ -31,7 +31,7 @@ public static float media (float primerio, float segundo, float terceiro) {
         System.out.println("Aprovado!\n");
     }
     else{
-        System.out.println("Reprovado!\n");
+        System.out.println("Reprovado!\n ");
     }
     return Math.round(mediaTotal * 100.0f)/100.0f;
 }
