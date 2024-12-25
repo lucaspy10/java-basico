@@ -1,37 +1,17 @@
-import java.util.Scanner;
-
 public class AulaUm {
 
 
-public static void main(String [] args) {
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Digite sua nota do primerio trimestre: ");
-    String primerioTrimestre = scanner.nextLine();
-    System.out.println("\n");
-    System.out.println("Digite sua nota do segundo trimestre: ");
-    String segundoTrimestre = scanner.nextLine();
-    System.out.println("\n");
-    System.out.println("Digite sua nota do terceiro trimestre: ");
-    String terceiroTrimestre =  scanner.nextLine();
-    System.out.println("\n");
-    float primerio = Float.parseFloat(primerioTrimestre);
-    float segundo = Float.parseFloat(segundoTrimestre);
-    float terceiro = Float.parseFloat(terceiroTrimestre);
-
-    float calcularMedia = media (primerio, segundo, terceiro);
-    System.out.println("sua media de notas este ano foi: " + calcularMedia +"\n");
-}
-public static float media (float primerio, float segundo, float terceiro) {
-    float mediaTotal = (primerio + segundo + terceiro) / 3; 
-    if ( mediaTotal >= 9 ) {
-        System.out.println ( "PARABENS! VOCÊ TEVE UMA NOTA EXELENTE ESTE ANO! Você está garantido no proximo ano. \n");
+    public static void main (String[] args) {
+    
+        String primeiroNome = "Hershell";
+        String segundoNome = "Lucas";
+    
+        String meu_Nome = meuNome (primeiroNome,segundoNome);
+        System.out.println(meu_Nome.toUpperCase() + " prazer em conhecer vocês!");
     }
-    else if (mediaTotal >= 6) {
-        System.out.println("Aprovado!");
+    
+    public static String meuNome (String primeiroNome, String segundoNome) {
+        return "O resultado desse test agora é. " + primeiroNome.concat(" ").concat(segundoNome);
     }
-    else{
-        System.out.println("Reprovado!");
-    }
-    return Math.round(mediaTotal * 100.0f)/100.0f;
-}
+    
 }
