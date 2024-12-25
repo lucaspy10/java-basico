@@ -13,6 +13,7 @@ public class variaveis {
         //para declara um valor de uma variavel como algo que nunca vai mudar devemos
         //antes de declara o tipo da variavel colocar a palavra "final".
         final double VALOR_DE_PI = 3.14;
+        System.out.println(VALOR_DE_PI);
 
     }
 

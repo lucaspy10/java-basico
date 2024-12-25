@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class calcularMedia {
 
 public static void main(String [] args) {
-    Scanner scanner = new Scanner(System.in);
+    try(Scanner scanner = new Scanner(System.in)){
     System.out.println("Digite sua nota do primerio trimestre: ");
     String primerioTrimestre = scanner.nextLine();
     System.out.println("\n");
@@ -15,12 +15,14 @@ public static void main(String [] args) {
     System.out.println("Digite sua nota do terceiro trimestre: ");
     String terceiroTrimestre =  scanner.nextLine();
     System.out.println("\n");
+    
     float primerio = Float.parseFloat(primerioTrimestre);
     float segundo = Float.parseFloat(segundoTrimestre);
     float terceiro = Float.parseFloat(terceiroTrimestre);
 
     float calcularMedia = media (primerio, segundo, terceiro);
     System.out.println("sua media de notas este ano foi: " + calcularMedia);
+    }
 }
 public static float media (float primerio, float segundo, float terceiro) {
     float mediaTotal = (primerio + segundo + terceiro) / 3; 
