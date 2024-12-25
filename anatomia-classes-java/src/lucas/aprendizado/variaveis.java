@@ -14,7 +14,6 @@ public class variaveis {
         //antes de declara o tipo da variavel colocar a palavra "final".
         final double VALOR_DE_PI = 3.14;
 
-
     }
 
 }
