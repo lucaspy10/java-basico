@@ -1,7 +1,5 @@
 import java.util.Scanner;
-
-public class AulaUm {
-
+public class calcularMedia {
 
 public static void main(String [] args) {
     Scanner scanner = new Scanner(System.in);
@@ -35,3 +33,4 @@ public static float media (float primerio, float segundo, float terceiro) {
     return Math.round(mediaTotal * 100.0f)/100.0f;
 }
 }
+
