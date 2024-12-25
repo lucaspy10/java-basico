@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+
 public class calcularMedia {
 
 public static void main(String [] args) {
@@ -17,7 +19,7 @@ public static void main(String [] args) {
     float terceiro = Float.parseFloat(terceiroTrimestre);
 
     float calcularMedia = media (primerio, segundo, terceiro);
-    System.out.println("sua media de notas este ano foi: " + calcularMedia +"\n");
+    System.out.println("sua media de notas este ano foi: " + calcularMedia);
 }
 public static float media (float primerio, float segundo, float terceiro) {
     float mediaTotal = (primerio + segundo + terceiro) / 3; 
