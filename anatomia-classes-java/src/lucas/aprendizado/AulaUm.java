@@ -4,7 +4,7 @@ public class AulaUm {
 
     public static void main (String[] args) {
     
-        String primeiroNome = "Hershell";
+        String primeiroNome = "H";
         String segundoNome = "Lucas";
     
         String meu_Nome = meuNome (primeiroNome,segundoNome);
